@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tashneet.example.com/sitemap.xml

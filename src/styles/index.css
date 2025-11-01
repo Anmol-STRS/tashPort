@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-display: "Playfair Display", "Georgia", serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-charcoal antialiased;
+  }
+
+  a {
+    @apply text-cocoa underline-offset-4 transition-colors duration-200;
+  }
+
+  a:hover,
+  a:focus-visible {
+    @apply text-cocoaDark;
+  }
+}
+
+@layer components {
+  .type-h1 {
+    @apply font-display text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight text-cocoaDark;
+  }
+
+  .type-h2 {
+    @apply font-display text-3xl sm:text-4xl leading-snug text-cocoa;
+  }
+
+  .type-body {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-mint focus-visible:ring-offset-cream;
+  }
+}
+
+@layer utilities {
+  .page-shell {
+    background:
+      radial-gradient(circle at 10% 20%, rgba(220, 232, 210, 0.55), transparent 55%),
+      radial-gradient(circle at 80% 10%, rgba(90, 62, 54, 0.22), transparent 55%),
+      radial-gradient(circle at 20% 85%, rgba(167, 184, 160, 0.3), transparent 50%),
+      linear-gradient(135deg, #f7f2ee 0%, #f1e7de 45%, #f7f2ee 100%);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .page-shell::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.35 0 0 0 0 0.27 0 0 0 0 0.23 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect filter='url(%23n)' width='160' height='160' opacity='0.08'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    z-index: 0;
+  }
+
+  .glass-panel {
+    @apply bg-white/65 shadow-soft ring-1 ring-black/5 backdrop-blur;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

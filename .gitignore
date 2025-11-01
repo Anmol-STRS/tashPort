@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+.turbo
+.cache
+*.log
+.DS_Store
+*.local
