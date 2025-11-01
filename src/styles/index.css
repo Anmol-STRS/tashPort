@@ -36,12 +36,36 @@
     @apply font-display text-3xl sm:text-4xl leading-snug text-cocoa;
   }
 
+  .type-h3 {
+    @apply font-display text-2xl sm:text-3xl leading-snug text-cocoaDark;
+  }
+
   .type-body {
     @apply text-base sm:text-lg leading-relaxed;
   }
 
+  .type-label {
+    @apply text-sm font-medium tracking-wide uppercase;
+  }
+
   .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-mint focus-visible:ring-offset-cream;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sage focus-visible:ring-offset-cream;
+  }
+
+  .btn {
+    @apply focus-ring inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-cocoa to-cocoaDark text-cream shadow-elegant hover:shadow-glow hover:scale-105 active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white/80 text-cocoaDark ring-1 ring-cocoa/20 hover:bg-white hover:shadow-elegant;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-cocoa hover:bg-mint/50;
   }
 }
 
@@ -67,7 +91,15 @@
   }
 
   .glass-panel {
-    @apply bg-white/65 shadow-soft ring-1 ring-black/5 backdrop-blur;
+    @apply bg-white/70 shadow-elegant ring-1 ring-white/60 backdrop-blur-md;
+  }
+
+  .surface-elevated {
+    @apply bg-white/80 shadow-soft ring-1 ring-cocoa/5;
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, rgba(167, 184, 160, 0.15) 0%, rgba(220, 232, 210, 0.25) 50%, rgba(247, 242, 238, 0.15) 100%);
   }
 }
 

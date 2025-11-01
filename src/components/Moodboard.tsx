@@ -41,7 +41,7 @@ export const Moodboard = () => {
       title="Chocolatey textures with gentle garden accents"
       description="Scenes that smell like cocoa, feel like open windows, and sound like friends laughing in the kitchen."
     >
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 md:grid-cols-3">
         {moodboardItems.map((item) => (
           <figure
             key={item.src}

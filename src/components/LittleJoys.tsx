@@ -16,7 +16,7 @@ export const LittleJoys = () => {
       eyebrow="Little Joys"
       title="Tiny sparks I collect like shiny wrappers"
     >
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-nowrap gap-2.5 overflow-x-auto pb-2 sm:flex-wrap sm:gap-3 sm:overflow-visible sm:pb-0">
         {joys.map((joy) => (
           <Chip key={joy}>{joy}</Chip>
         ))}

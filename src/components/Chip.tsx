@@ -15,13 +15,15 @@ export const Chip = ({
 
   const hoverProps = prefersReducedMotion
     ? {}
-    : { whileHover: { scale: 1.02 }, whileFocus: { scale: 1.02 } };
+    : { whileHover: { scale: 1.05, y: -2 }, whileTap: { scale: 0.98 } };
 
   return (
     <motion.span
       className={cn(
-        "focus-ring inline-flex min-h-[44px] items-center justify-center rounded-full border border-cocoa/10 bg-mint/60 px-4 py-2 text-sm font-medium text-cocoa transition-all duration-200",
-        "hover:border-cocoa/30 hover:shadow-soft",
+        "focus-ring inline-flex min-h-[38px] items-center justify-center rounded-full border border-white/50 bg-gradient-to-br from-mint/70 to-mint/55 px-4 py-1.5 text-xs font-medium text-cocoaDark shadow-sm transition-all duration-200",
+        "hover:border-white/80 hover:shadow-elegant hover:from-mint/80 hover:to-mint/65",
+        "backdrop-blur-sm",
+        "sm:min-h-[44px] sm:px-5 sm:py-2.5 sm:text-sm",
         className
       )}
       {...hoverProps}

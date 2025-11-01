@@ -47,7 +47,7 @@ export const Section = ({
           }
         }
       }}
-      className={cn("py-16 sm:py-20 lg:py-24", className)}
+      className={cn("py-14 sm:py-18 lg:py-24", className)}
     >
       <Container>
         <div className="max-w-3xl space-y-6">
