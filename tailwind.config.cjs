@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cocoa: "#5E0D24",
-        cocoaDark: "#3B0916",
-        cream: "#F6D5DF",
-        sage: "#8B1E3A",
-        mint: "#C94A6F",
+        cocoa: "#6E1030",
+        cocoaDark: "#4A0A1D",
+        cream: "#FFE5EE",
+        sage: "#A02347",
+        mint: "#E5567F",
         charcoal: "#0B0204"
       },
       fontFamily: {
@@ -26,10 +26,10 @@ module.exports = {
         ]
       },
       boxShadow: {
-        soft: "0 12px 32px -20px rgba(61, 9, 22, 0.5)",
-        elegant: "0 4px 16px -4px rgba(94, 13, 36, 0.18), 0 8px 32px -8px rgba(94, 13, 36, 0.12)",
-        glow: "0 0 32px rgba(201, 74, 111, 0.28), 0 4px 16px rgba(94, 13, 36, 0.12)",
-        inner: "inset 0 2px 8px rgba(94, 13, 36, 0.1)"
+        soft: "0 12px 32px -20px rgba(74, 10, 29, 0.6)",
+        elegant: "0 4px 16px -4px rgba(110, 16, 48, 0.22), 0 8px 32px -8px rgba(110, 16, 48, 0.16)",
+        glow: "0 0 40px rgba(229, 86, 127, 0.35), 0 4px 20px rgba(110, 16, 48, 0.18)",
+        inner: "inset 0 2px 8px rgba(110, 16, 48, 0.12)"
       },
       spacing: {
         '18': '4.5rem',
