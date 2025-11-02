@@ -72,10 +72,10 @@
 @layer utilities {
   .page-shell {
     background:
-      radial-gradient(circle at 10% 20%, rgba(220, 232, 210, 0.55), transparent 55%),
-      radial-gradient(circle at 80% 10%, rgba(90, 62, 54, 0.22), transparent 55%),
-      radial-gradient(circle at 20% 85%, rgba(167, 184, 160, 0.3), transparent 50%),
-      linear-gradient(135deg, #f7f2ee 0%, #f1e7de 45%, #f7f2ee 100%);
+      radial-gradient(circle at 15% 20%, rgba(201, 74, 111, 0.4), transparent 60%),
+      radial-gradient(circle at 80% 15%, rgba(11, 2, 4, 0.32), transparent 55%),
+      radial-gradient(circle at 25% 85%, rgba(94, 13, 36, 0.35), transparent 55%),
+      linear-gradient(135deg, #f6d5df 0%, #eeb5c7 40%, #f6d5df 100%);
     position: relative;
     overflow-x: hidden;
   }
@@ -85,7 +85,7 @@
     position: fixed;
     inset: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.35 0 0 0 0 0.27 0 0 0 0 0.23 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect filter='url(%23n)' width='160' height='160' opacity='0.08'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.62 0 0 0 0 0.24 0 0 0 0 0.36 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect filter='url(%23n)' width='160' height='160' opacity='0.08'/%3E%3C/svg%3E");
     background-repeat: repeat;
     z-index: 0;
   }
@@ -99,7 +99,7 @@
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, rgba(167, 184, 160, 0.15) 0%, rgba(220, 232, 210, 0.25) 50%, rgba(247, 242, 238, 0.15) 100%);
+    background: linear-gradient(135deg, rgba(201, 74, 111, 0.2) 0%, rgba(139, 30, 58, 0.3) 50%, rgba(246, 213, 223, 0.2) 100%);
   }
 }
 

@@ -91,7 +91,7 @@ const ChocolateCluster = () => {
       rotation: [0.4, 0.6, 0.2],
       geometry: "box",
       scale: [1.2, 1.2, 1.2],
-      hue: 18,
+      hue: 342,
       floatOffset: 0
     },
     {
@@ -99,7 +99,7 @@ const ChocolateCluster = () => {
       rotation: [0.2, -0.4, -0.35],
       geometry: "cylinder",
       scale: [1.1, 1, 1.1],
-      hue: 24,
+      hue: 348,
       floatOffset: 0.8
     },
     {
@@ -107,7 +107,7 @@ const ChocolateCluster = () => {
       rotation: [0.1, 0.3, -0.2],
       geometry: "box",
       scale: [1, 1, 1],
-      hue: 16,
+      hue: 336,
       floatOffset: 1.6
     },
     {
@@ -115,7 +115,7 @@ const ChocolateCluster = () => {
       rotation: [-0.25, 0.2, 0.3],
       geometry: "cylinder",
       scale: [1, 0.9, 1],
-      hue: 28,
+      hue: 354,
       floatOffset: 2.4
     }
   ];
@@ -143,7 +143,7 @@ const Scene = () => {
       <directionalLight
         position={[-4, -2, -4]}
         intensity={0.35}
-        color="#F7F2EE"
+        color="#F6D5DF"
       />
       <Environment preset="city" />
       <group position={[0, 0, 0]}>
@@ -155,7 +155,7 @@ const Scene = () => {
         >
           <circleGeometry args={[4, 64]} />
           <meshStandardMaterial
-            color="#3F2B25"
+            color="#3B0916"
             metalness={0.1}
             roughness={0.6}
           />
@@ -189,7 +189,7 @@ const ChocolateScene = () => {
             fallback={
               <Html center>
                 <div className="rounded-full bg-white/70 px-4 py-2 text-sm text-cocoa">
-                  Melting chocolate…
+                  Berry glaze loading...
                 </div>
               </Html>
             }
@@ -205,3 +205,4 @@ const ChocolateScene = () => {
 };
 
 export default ChocolateScene;
+
